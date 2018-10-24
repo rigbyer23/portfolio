@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -94,18 +93,18 @@
         //on load grab the array and insert it into the page
         //get the element that will hold the list
         const listElement = document.getElementById('hikes');
-         listElement.innerHTML = "";
-                hikeList.forEach(hike => {
-                   listElement.appendChild(renderHike(hike));
-                });
+        listElement.innerHTML = "";
+        hikeList.forEach(hike => {
+            listElement.appendChild(renderHike(hike));
+        });
 
-            
+
         //for each element in the list 
         //for each item we need to build out a li element structure
-            
 
-    // Right now, this loop only works with one
-    // explicitly specified array (options[0] aka 'set0')
+
+        // Right now, this loop only works with one
+        // explicitly specified array (options[0] aka 'set0')
 
 
         function createHike(hike) {
@@ -125,7 +124,7 @@
 
         function renderHike(hike) {
             // Do it again with a template literal string
-            const item = document.createElement('li');
+            const item = document.createElement('h4');
             item.innerHTML = `<img src="${hike.imgSrc}" alt="${hike.imgAlt}">
                 <h2>Bechler Falls</h2>
                 <div>
