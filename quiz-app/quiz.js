@@ -19,12 +19,13 @@ function buildQuestion(question) {
     item.innerHTML = `<h4>${question.question}</h4>`
     console.log(question.question);
 
-    let buttonArray = [`${question.correct_answer}`, `${question.incorrect_answers[0]}`, `${question.incorrect_answers[1]}`, `${question.incorrect_answers[2]}`];
+    let buttonArray = [question.correct_answer, question.incorrect_answers[0], question.incorrect_answers[1], question.incorrect_answers[2]];
 
 
     let numbers = [];
     let i = 0;
     const options = document.getElementById('answers');
+    options.innerHTML = '';
     while (i < buttonArray.length) {
         let btn = document.createElement("button");
         btn.className = "btn btn-primary btn-lg btn-block btn-dark";
@@ -34,7 +35,7 @@ function buildQuestion(question) {
             numbers.push(random);
             btn.appendChild(t);
             btn.onclick = function () { storeAnswer(this) };
-            options.innerHTML = document.body.appendChild(btn);
+            options.appendChild(btn);
             i++;
         }
 
@@ -45,7 +46,7 @@ function buildQuestion(question) {
 let score = 0;
 function storeAnswer(buttonSelected) {
     console.log(buttonSelected.innerHTML);
-    if (buttonSelected.innerHTML = "question.correct_answer") {
+    if (buttonSelected.innerHTML == question[number].correct_answer) {
         buttonSelected.style.backgroundColor = "green";
         score++;
     }
