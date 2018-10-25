@@ -1,0 +1,123 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What is the colour of unoxidized blood?",
+            "correct_answer": "Red",
+            "incorrect_answers": [
+                "Blue",
+                "Purple",
+                "Green"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In aeronautics, flaps and slats are used to control what on an aircraft?",
+            "correct_answer": "Lift",
+            "incorrect_answers": [
+                "Thrust",
+                "Drag",
+                "Weight "
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "The &quot;Gympie Stinger&quot; is the deadliest plant in the world.",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which chemical element has the lowest boiling point?",
+            "correct_answer": "Helium",
+            "incorrect_answers": [
+                "Hydrogen",
+                "Neon",
+                "Nitrogen"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Au on the Periodic Table refers to which element?",
+            "correct_answer": "Gold",
+            "incorrect_answers": [
+                "Silver",
+                "Oxygen",
+                "Nickel"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "How many officially recognized dwarf planets in the solar system are named after Polynesian deities?",
+            "correct_answer": "2",
+            "incorrect_answers": [
+                "0",
+                "1",
+                "5"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What polymer is used to make CDs, safety goggles and riot shields?",
+            "correct_answer": "Polycarbonate",
+            "incorrect_answers": [
+                "Rubber",
+                "Nylon",
+                "Bakelite"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Deuterium is an isotope of which element?",
+            "correct_answer": "Hydrogen",
+            "incorrect_answers": [
+                "Nitrogen",
+                "Helium",
+                "Neon"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "A positron is an antiparticle of a what?",
+            "correct_answer": "Electron",
+            "incorrect_answers": [
+                "Neutron",
+                "Proton",
+                "Photon"
+            ]
+        },
+        {
+            "category": "Science & Nature",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "About how old is Earth?",
+            "correct_answer": "4.5 Billion Years",
+            "incorrect_answers": [
+                "3.5 Billion Years",
+                "2.5 Billion Years",
+                "5.5 Billion Years"
+            ]
+        }
+    ]
+}
