@@ -27,6 +27,7 @@ function buildQuestion(question) {
         let btn = document.createElement("button");
         btn.className = "btn btn-primary btn-lg btn-block btn-dark";
         let random = Math.floor(Math.random() * buttonArray.length);
+
         if (!numbers.includes(random)) {
             t = document.createTextNode(buttonArray[random]);
             numbers.push(random);

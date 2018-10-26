@@ -9,12 +9,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <script src="quiz.js"></script>
+
 
 </head>
 
 <body onload="getJSON('quizdata.json')">
-    <!---buildQuestions instead-->
+
+
     <div class='containter-fluid'>
         <nav class="navbar navbar-dark bg-dark" style="text-align:center;">
             <h1 class="navbar-brand mx-auto" style="color:white; font-family:'Pacifico', cursive; font-size:2em;">Trivia
@@ -30,7 +31,7 @@
                 <br>
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title" id="firstQ">What color is a saphire?</h4>
+                        <h4 class="card-title" id="firstQ"></h4>
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         </button>
 
@@ -48,7 +49,7 @@
     </div>
 
 
-
+    <script src="quizObject.js"></script>
 </body>
 
 </html>
