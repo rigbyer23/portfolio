@@ -20,11 +20,15 @@ const quiz = {
 
     //methods
     , checkBool: function () {
-        if (question.type == "boolean") {
-            let v = document.createTextNode(createTextNodebuttonArray[1, 2])
-            btn.appendChild(v);
-            btn.onclick = function () { storeAnswer(this) };
-            options.appendChild(btn);
+        const currQ = this.question[this.number];
+        console.log(currQ.type);
+        const options = document.getElementById('answers');
+        if (currQ.type == "boolean") {
+            let boolbtn = document.createElement("button");
+            let v = document.createTextNode(buttonArray[1, 2]);
+            boolbtn.appendChild(v);
+            boolbtn.onclick = function () { storeAnswer(this) };
+            options.appendChild(boolbtn);
         }
     }
 
@@ -33,12 +37,12 @@ const quiz = {
         let i = 0;
         let numbers = [];
         const currentQ = this.question[this.number];
-        let item = document.getElementById('firstQ')
+        let item = document.getElementById('firstQ');
         item.innerHTML = `<h4>${currentQ.question}</h4>`;
-
         buttonArray = [currentQ.correct_answer, currentQ.incorrect_answers[0], currentQ.incorrect_answers[1], currentQ.incorrect_answers[2]];
         const options = document.getElementById('answers');
         options.innerHTML = '';
+        // quiz.checkBool();
         while (i < buttonArray.length) {
             let btn = document.createElement("button");
             btn.className = "btn btn-primary btn-lg btn-block btn-dark";
@@ -67,7 +71,7 @@ const quiz = {
             buttonSelected.style.backgroundColor = "red";
         }
 
-        if (this.number < 9) {
+        if (this.number < 8) {
             this.number++;
             setTimeout(function () { quiz.buildQuestion() }, 1000);
         }

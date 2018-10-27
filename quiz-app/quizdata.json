@@ -27,16 +27,6 @@
         },
         {
             "category": "Science & Nature",
-            "type": "boolean",
-            "difficulty": "medium",
-            "question": "The &quot;Gympie Stinger&quot; is the deadliest plant in the world.",
-            "correct_answer": "False",
-            "incorrect_answers": [
-                "True"
-            ]
-        },
-        {
-            "category": "Science & Nature",
             "type": "multiple",
             "difficulty": "medium",
             "question": "Which chemical element has the lowest boiling point?",
