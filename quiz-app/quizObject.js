@@ -57,7 +57,8 @@ const quiz = {
     }
 
     , storeAnswer: function (buttonSelected) {
-        let finalPg = document.getElementById('total');
+
+
         if (buttonSelected.innerHTML == this.question[this.number].correct_answer) {
             buttonSelected.style.backgroundColor = "green";
             this.score++;
@@ -71,13 +72,14 @@ const quiz = {
             setTimeout(function () { quiz.buildQuestion() }, 1000);
         }
         else {
-            window.location = './finalScore.html';
+            window.location.href = './finalScore.html' + '#' + this.score;
         }
 
     }
 
 
     , returnScore: function () {
+        let finalPg = document.getElementById('total');
         finalPg.innerHTML = `<p>"Your score is: " score " out of 10"`;
     }
 
