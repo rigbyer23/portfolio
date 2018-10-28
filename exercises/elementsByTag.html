@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Heading with a <span>span</span> element.</h1>
+    <p>A paragraph with <span>one</span>, <span>two</span>
+        spans.</p>
+
+    <script>
+        //input: a node and string(tagname)
+        //Processing: use nodeName to check the name of an element
+        //Output: an array containing every descendant element and with the given tag name
+        function byTagName(node, tagName) {
+            let tagList = [];
+            tagName = tagName.toUppercase();
+            if (node.nodeType == Node.ELEMENT_NODE) {
+                for (let i = 0; i < childNodes.length; i++) {
+                    let child = childNodes[i];
+                    if (child.NodeType == document.ELEMENT_NODE) {
+                        if (child.nodeName == tagName) tagList.push(child)
+                        explore(child);
+                    }
+                    return true;
+                }
+            }
+
+            return tagList;
+
+        }
+
+        console.log(byTagName(document.body, "h1").length);
+        // → 1
+        console.log(byTagName(document.body, "span").length);
+        // → 3
+        let para = document.querySelector("p");
+        console.log(byTagName(para, "span").length);
+      // → 2
+    </script>
+</body>
+
+</html>
